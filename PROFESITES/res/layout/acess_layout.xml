@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="@drawable/fondo"
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Leyenda"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/contraseñal"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Nombreusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="118dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/correo_iteso"
+        android:imeActionLabel="@string/correo_resumido"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/Leyenda"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nombreusuario"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/leyenda"
+        android:textColor="#FBFBEF"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+       
+    <ToggleButton
+        android:id="@+id/Ingreso"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Contraseña"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_custom"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+</RelativeLayout>

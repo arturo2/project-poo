@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/preg_calificar_5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/preguntas_calificar_5"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android1:gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/pregCalif5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android1:layout_marginLeft="60dp"
+        android1:layout_marginRight="60dp" >
+
+        <RadioButton
+            android1:id="@+id/pregCalif5_1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="@string/res_mala"
+       		android:textSize="20sp"
+            android1:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/pregCalif5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/res_bajo_interes"
+       		android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/pregCalif5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/res_interes_en_clase"
+       		android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/pregCalif5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/res_interes_extraclase"
+       		android:textSize="20sp"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <Button
+        android1:id="@+id/button1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignRight="@+id/preg_calificar_5"
+        android1:layout_marginBottom="34dp"
+        android1:layout_marginRight="14dp"
+        android1:text="@string/siguiente" />
+
+</RelativeLayout>
